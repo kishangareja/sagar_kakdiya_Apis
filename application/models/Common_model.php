@@ -6,6 +6,7 @@ class Common_model extends CI_Model {
 
 	private $category = 'category';
 	private $user_session = 'user_session';
+	private $users = 'users';
 
 	public function getUserSessionTable() {
 		return $this->user_session;
@@ -13,6 +14,10 @@ class Common_model extends CI_Model {
 
 	public function getCategoryTable() {
 		return $this->category;
+	}
+
+	public function getUsersTable() {
+		return $this->users;
 	}
 
 	/**
@@ -78,4 +83,20 @@ class Common_model extends CI_Model {
 		return $this->gdb->get($this->users)->row();
 	}
 
+	// api
+	public function signup($request) {
+		return $this->gdb->insert($this->common->getUsersTable(), $request);
+	}
+
+	public function checkUserExists($mobile,$email) {
+		$this->db->where('mobile', $mobile);
+		$this->db->where('email', $email);
+		return $this->gdb->get($this->common->getUsersTable())->row();
+	}
+
+	public function login($mobile, $password) {
+		$this->gdb->where('mobile', $mobile);
+		$this->gdb->where('password', $password);
+		return $this->gdb->get($this->common->getUsersTable())->row();
+	}
 }
