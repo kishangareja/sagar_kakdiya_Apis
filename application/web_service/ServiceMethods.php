@@ -13,7 +13,7 @@ class ServiceMethods
      *
      * @var array
      */
-    private $open_service = array('get_category','signup','login');
+    private $open_service = array('get_category','signup','login','delete_category');
 
     function __construct()
     {
@@ -193,6 +193,21 @@ Your one time password is : ".$otp);
         return $this->r_data;
     }
 
+        /**
+     * Get Category
+     */
+    public function delete_category($category_id)
+    {
+        $this->load->model('category_model');
+        $this->r_data['message'] = "Category Not found.";
+        $category = $this->category_model->deleteCategory($category_id);        
+        if ($category) {
+            $this->r_data['message'] = "Category deleted successfully.";
+            $this->r_data['success'] = 1;
+        }
+        return $this->r_data;
+    }
+    
     /**
      * Logout
      */

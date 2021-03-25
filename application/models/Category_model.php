@@ -3,7 +3,6 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Category_model extends CI_Model {
-
 	/**
 	 * Start Category
 	 */
@@ -28,5 +27,4 @@ class Category_model extends CI_Model {
 		$this->gdb->where('id', $id);
 		return $this->gdb->delete($this->common->getCategoryTable());
 	}
-
 }

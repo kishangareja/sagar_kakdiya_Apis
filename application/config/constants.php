@@ -94,4 +94,4 @@ define('DSC', DIRECTORY_SEPARATOR);
 
 //define upload constat
 define('UPLOAD', 'uploads/');
-define('STAFFUPLOAD', UPLOAD . 'staff_upload/');
+define('CATEGORY', UPLOAD . 'category/');
