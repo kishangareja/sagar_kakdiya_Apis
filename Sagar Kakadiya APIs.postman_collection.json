@@ -1,0 +1,210 @@
+{
+	"id": "252c57c7-5070-7f61-13c7-2fd421b0797f",
+	"name": "Sagar Kakadiya APIs",
+	"description": "",
+	"order": [
+		"0c4f8158-9bae-636c-b306-cc80e8aeb795",
+		"40a1984d-e29a-010f-36d4-01045e851236",
+		"9087d07d-0051-e4c5-7d8a-106daf386a18",
+		"d04b271d-e570-ae76-905f-bace0e66cb83",
+		"795c2501-b0ff-75ca-5a78-279ebe89df42",
+		"084fe117-0540-9514-45c2-26899d7b91d8"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1615720794415,
+	"owner": "5721561",
+	"public": false,
+	"requests": [
+		{
+			"id": "084fe117-0540-9514-45c2-26899d7b91d8",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{base_url}}",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1616647368589,
+			"name": "Delete Category",
+			"description": "",
+			"collectionId": "252c57c7-5070-7f61-13c7-2fd421b0797f",
+			"responses": [],
+			"rawModeData": "{\r\n  \"service\": \"delete_category\",\r\n  \"request\": {\r\n    \"category_id\" : \"10\"\r\n  }\r\n}"
+		},
+		{
+			"id": "0c4f8158-9bae-636c-b306-cc80e8aeb795",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{base_url}}",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1616514697859,
+			"name": "Get Category",
+			"description": "",
+			"collectionId": "252c57c7-5070-7f61-13c7-2fd421b0797f",
+			"responses": [],
+			"rawModeData": "{\r\n  \"service\": \"get_category\"\r\n}"
+		},
+		{
+			"id": "40a1984d-e29a-010f-36d4-01045e851236",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{base_url}}",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1616520052612,
+			"name": "Login",
+			"description": "",
+			"collectionId": "252c57c7-5070-7f61-13c7-2fd421b0797f",
+			"responses": [],
+			"rawModeData": "{\r\n  \"service\": \"login\",\r\n  \"request\": {\r\n\t\"mobile\": \"9687311507\",\r\n\t\"password\": \"123\"\r\n  }\r\n}\t"
+		},
+		{
+			"id": "795c2501-b0ff-75ca-5a78-279ebe89df42",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost/sagar_kakdiya_Apis/WebService/add_category/12",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "name",
+					"value": "test12345",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "image",
+					"value": "photo-1494548162494-384bba4ab999.jpg",
+					"description": "",
+					"type": "file",
+					"enabled": false
+				}
+			],
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1616646420837,
+			"name": "Update Category",
+			"description": "",
+			"collectionId": "252c57c7-5070-7f61-13c7-2fd421b0797f",
+			"responses": []
+		},
+		{
+			"id": "9087d07d-0051-e4c5-7d8a-106daf386a18",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{base_url}}",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1616520053770,
+			"name": "Register",
+			"description": "",
+			"collectionId": "252c57c7-5070-7f61-13c7-2fd421b0797f",
+			"responses": [],
+			"rawModeData": "{\r\n  \"service\": \"signup\",\r\n  \"request\": {\r\n        \"data\": {\r\n\t        \"name\": \"kishan\",\r\n\t    \t\"mobile\": \"9687311511\",\r\n\t    \t\"email\": \"kishan@gmail.com\",\r\n\t    \t\"password\": \"123\",\r\n\t    \t\"device_id\":\"akjlkjdksdkashgdhasdkjhsgakjdhgskjda\" \r\n\t      }\r\n      }\r\n}"
+		},
+		{
+			"id": "d04b271d-e570-ae76-905f-bace0e66cb83",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost/sagar_kakdiya_Apis/WebService/add_category",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "name",
+					"value": "kishansdasdsdas",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "image",
+					"value": "download.jpg",
+					"description": "",
+					"type": "file",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1616645559717,
+			"name": "Add Category",
+			"description": "",
+			"collectionId": "252c57c7-5070-7f61-13c7-2fd421b0797f",
+			"responses": []
+		}
+	]
+}
